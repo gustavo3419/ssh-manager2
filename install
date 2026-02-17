@@ -47,15 +47,14 @@ apt install cron curl jq unzip python3 -y
 clear
 
 if [[ $(uname -m) == "aarch64" ]]; then
-    rm -rf install* > /dev/null 2>&1
-    wget raw.githubusercontent.com/nandoslayer/scripts/refs/heads/main/sshplusarm64 > /dev/null 2>&1 && chmod +x sshplusarm64 && ./sshplusarm64
-    cat /dev/null > ~/.bash_history && history -c
-    rm -rf wget-log* > /dev/null 2>&1
-    exit;
+    wget -q https://raw.githubusercontent.com/gustavo3419/ssh-manager2/principal/sshplusarm64
+    chmod +x sshplusarm64
+    ./sshplusarm64
+    exit 0
 else
-    rm -rf install* > /dev/null 2>&1
-    wget raw.githubusercontent.com/nandoslayer/scripts/refs/heads/main/sshplusinstall > /dev/null 2>&1 && chmod +x sshplusinstall && ./sshplusinstall
-    cat /dev/null > ~/.bash_history && history -c
-    rm -rf wget-log* > /dev/null 2>&1
-    exit;
+    wget -q https://raw.githubusercontent.com/gustavo3419/ssh-manager2/principal/sshplusinstall
+    chmod +x sshplusinstall
+    ./sshplusinstall
+    exit 0
 fi
+
