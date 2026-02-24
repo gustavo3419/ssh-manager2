@@ -1,1 +1,61 @@
-config.json
+{
+    "Version": "1",
+    "ReleaseNotes": "",
+    "UrlUpdate": "https://paste.anasor.com/paste.php?raw&id=353409",
+    "CheckUser": "true",
+    "BackgroundLink": "https://i.pinimg.com/564x/50/13/6b/50136bee2106d1b290347a9314656010.jpg",
+    "LogoLink": "https://i.pinimg.com/564x/50/13/6b/50136bee2106d1b290347a9314656010.jpg",
+    "UdpPort": "7300;7500;7600;7599;7200;7777;9999",
+    "Sms": "https://bitbin.it/Ec4p7Tlf/raw/",
+    "EmailFeedback": "apolossh@gmail.com",
+    "UrlContato": "https://t.me/apolo_vx",
+    "UrlTermos": "https://kiritosshxd.github.io/Conecta4g_site/termos.html",
+    "Servers": [
+        {
+            "Name": "a",
+            "TYPE": "premium",
+            "FLAG": "br.png",
+            "ServerIP": "rpnet.site",
+            "CheckUser": "http://191.252.101.48:8080/checkUser",
+            "ServerPort": "22",
+            "SSLPort": "443",
+            "USER": "",
+            "PASS": ""
+        }
+    ],
+    "Networks": [
+        {
+            "Name": "V-01-DIRECT",
+            "FLAG": "br",
+            "Payload": "GET/HTTP/1.1[crlf]Host:s1.anymod.shop[crlf]Connection:Upgrade[crlf]Upgrade:Websocket[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "104.16.51.111",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "V-02-DIRECT",
+            "FLAG": "vivo",
+            "Payload": "BASELINE-CONTROLwss://[app_host]HTTP/1.1[crlfAqui está a continuação e o JSON completo:
+
+```json
+            "Payload": "BASELINE-CONTROLwss://[app_host]HTTP/1.1[crlf]Host:[app_host][crlf]Upgrade:Websocket[crlf]Connection:Keep-Alive[crlf]TOPSPEED[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "104.16.51.111",
+            "ProxyIP": "104.16.51.111",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "V-10-DIRECT",
+            "FLAG": "vivo",
+            "Payload": "GET/HTTP/1.1[crlf]Host:[app_host][crlf]Upgrade:websocket[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "104.16.53.111",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        }
+    ]
+}
